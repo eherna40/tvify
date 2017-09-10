@@ -1,0 +1,514 @@
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:400,700|Passion+One:400,700');
+
+@import 'nib'
+
+$keyframe-name = spinner
+
+body
+    color white
+    font-family 'Encode Sans', sans-serif
+    background #1C1C1C
+
+h3,
+h1,
+ul,
+p
+    margin 0
+
+.row
+    .col
+        padding 0
+
+header
+    height 100vh
+    position fixed
+    width 60px
+
+.main-head
+    padding 0 2rem !important
+
+.main-head,
+.head-log,
+.head-info,
+.head-config,
+.upcoming-head
+    height 50px
+    color #707070
+
+.upcoming-head
+    justify-content center
+    font-weight 700
+    color white
+    background #141414
+    h6
+        font-weight 700
+
+.movie-view
+    padding 10% 30px !important
+    background-repeat no-repeat
+    background-size cover
+    background-position center
+    color rgb(250,250,250)
+    display none
+    position relative
+    z-index 1
+    .movie-view-title
+        h1
+            line-height 1em
+            margin-bottom 30px
+
+.divider
+    margin-top 20px
+    opacity .3
+    box-shadow 0px 0px 10px #e0e0e0
+
+.star-active
+    color yellow
+
+.geners, .trailer
+    margin-top 20px
+
+.geners
+    ul
+        display flex
+        flex-wrap wrap
+        li
+            border 1px solid rgb(250,250,250)
+            padding 2px 15px
+            margin-right 20px
+            text-transform uppercase
+            font-size 10px
+            margin-bottom 20px
+            color rgb(250,250,250)
+
+.image
+    position absolute
+    width 100%
+    height 100%
+    text-align center
+    margin auto auto
+    justify-content center
+    img
+        opacity .3
+    h2
+        position absolute
+        font-family 'Passion One', cursive
+
+.video-trailer
+    position fixed
+    width 100%
+    height 100%
+    top 0
+    left 0
+    background rgba(0,0,0,.9)
+    z-index 2
+    display none
+
+.video-responsive
+    max-width 100%
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    height 100%
+    iframe
+        max-width 100%
+        width 80%
+        height 80%
+
+.trailer-play
+    width 50px
+    height 50px
+    float right
+    cursor pointer
+    color white
+    position relative
+    font-size 12px
+    padding 12px 12px 0px 0px
+    cursor pointer
+    background rgba(25, 118, 210, .5)
+    border 1px solid #1976d2
+    transition all 1s ease
+
+.trailer-play:active,
+.play:active,
+.close:active,
+.close-trailer:active
+    transform scale(.3)
+
+.upcoming-list, .movie-view
+    height calc(100vh - 50px)
+
+.col
+    &.movie
+        padding 0 0.75rem !important
+
+.upcoming-movie
+    height calc((100vh - 50px)/3)
+    text-align center
+    padding 20px !important
+    img
+        height 100%
+
+nav
+    height 100%
+    background none
+    i
+        font-size 30px !important
+        height 50px !important
+        line-height 50px !important
+
+.hamburger
+    li
+        text-align center
+        width 100%
+
+.navbar
+    display flex
+    flex-direction column
+    justify-content space-between
+    align-items center
+    position relative
+    width 100%
+    flex-wrap nowrap
+    height 100%
+    li
+        border-bottom 3px solid #101010
+        width 100%
+        text-align center
+        height 100%
+        margin auto
+        display flex
+        align-items center
+        justify-content center
+        cursor pointer
+        &:hover
+            background #101010
+
+.head-info .valign-wrapper,
+.head-config .valign-wrapper
+    height 100%
+
+.menu-section
+    height 100vh
+    width 100%
+    position absolute
+    background rgba(0,0,0,.9)
+    z-index 100
+    display none
+
+.search
+    justify-content center
+    height 100%
+    form
+        display inline-flex
+
+input[type=text]:not(.browser-default)
+    font-size 2rem
+
+.disabled
+    display none !important
+
+.close,
+.close-trailer
+    height 30px
+    width 30px
+    right 50px
+    top 50px
+    position absolute
+    cursor pointer
+    z-index 2
+    border-radius 50%
+    background rgba(255,255,255,.5)
+    transition all .5s linear
+    padding-top 3px
+    padding-left 3px
+
+.app
+    margin-left 60px
+
+.navbar li.active-menu,
+.navbar li:active
+    background #101010
+    border-left 3px solid #0d47a1
+
+.head-logo
+    font-family 'Passion One', cursive
+    color white
+
+.head-info
+    ul
+        li
+            font-size 10px
+            font-weight 700
+            margin-left 15px
+            display inline-flex
+            i
+                font-size 15px
+                margin-right 10px
+            &:nth-child(1)
+                i
+                    color #0d47a1
+            &:nth-child(2)
+                i
+                    color #00c853
+            &:nth-child(3)
+                i
+                    color #bf360c
+
+.head-config
+    ul
+        li
+            i
+                font-size 20px
+                margin-right 10px
+
+.head-config ul li:hover,
+.head-info ul li:hover,
+.watchtlist-movie-tv ul li:hover
+    color white
+
+.head-config ul li:hover,
+.head-info ul li:hover,
+.watchtlist-movie-tv ul li
+    cursor pointer
+    transition color .5s linear
+
+.had-container
+    .row
+        margin-bottom 0
+        position relative
+
+.watchlist-head
+    height 70px
+
+.watchlist-head,
+.watchlist-list
+    color #707070
+    font-weight 700
+
+.main-watchlist
+    background #282828
+    height calc(100vh - 50px)
+    overflow auto
+    position relative
+    padding 2rem !important
+
+.watchtlist-movie-tv
+    ul
+        justify-content flex-end
+        color rgb(250,250,250)
+        li
+            padding 0 10px
+            &:last-child
+                border-left 2px solid #353535
+
+.watchlist-list
+    position relative
+    height 100%
+
+.load
+    height 100%
+    position absolute
+    top 0
+    z-index 100
+    left 0
+
+.spinner
+    height 2px
+    background black
+    position relative
+    top 50%
+    overflow hidden
+    &::after
+        background white
+        content ''
+        width 100%
+        left 0
+        height 100%
+        position absolute
+        transform translateX(100%)
+        animation-name spinner
+        animation-direction normal
+        animation-duration 3s
+        animation-iteration-count infinite
+
+@keyframes {$keyframe-name}
+    {0%}
+        transform translateX(-100%)
+    {50%}
+        transform translateX(100%)
+    {100%}
+        transform translateX(-100%)
+    
+.watchlist
+        height 100%
+        position absolute
+
+.datas
+    position relative
+    &::before
+        background-color rgba(0,0,0,0,0.3)
+        content ''
+        top 0
+        height 100%
+    &::after
+        background #0d47a1
+        content ''
+        bottom 0
+        height 5px
+
+.data-info,
+.play
+    position absolute
+
+.data-info
+    top 0
+    height 100%
+    width 100%
+    padding 1rem
+
+.play
+    top calc(50% - 1rem)
+    left calc(50% - 1.75rem)
+    cursor pointer
+    transform scale(0)
+    background rgba(25, 118, 210, .5)
+    height 50px
+    width 50px
+    position absolute
+    border 1px solid #1976d2
+    transition all 1s ease
+    i
+        margin 12px 0 0 11px
+
+.like
+    position absolute
+    bottom 30px
+    opacity 0
+    transition opacity .3s linear
+
+.like,
+.like i
+    font-size 10px
+    font-weight 100
+
+.movie-view-like i,.movie-view-like, .stars i
+    font-size 15px
+    font-weight 100
+
+.movie-view-list
+    height 100%
+    width 100%
+    padding 0 10%
+
+.like i,
+.movie-view-like i
+    margin-right 5px
+
+.shadow
+    z-index 0
+    top 0
+    left 0
+    content ''
+    position absolute
+    width 100%
+    height 100%
+    background rgba(0,0,0,0)
+    background -moz-linear-gradient(top, rgba(0,0,0,0) 22%, rgba(0,0,0,1) 100%)
+    background -webkit-gradient(left top, left bottom, color-stop(22%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)))
+    background -webkit-linear-gradient(top, rgba(0,0,0,0) 22%, rgba(0,0,0,1) 100%)
+    background -o-linear-gradient(top, rgba(0,0,0,0) 22%, rgba(0,0,0,1) 100%)
+    background -ms-linear-gradient(top, rgba(0,0,0,0) 22%, rgba(0,0,0,1) 100%)
+    background linear-gradient(to bottom, rgba(0,0,0,0) 22%, rgba(0,0,0,1) 100%)
+
+.movie
+    color white
+    margin-bottom 30px
+    cursor pointer
+    .category
+        font-size 10px
+        transition color .3s linear
+
+.datas::before,
+.datas::after
+    opacity 0
+    left 0
+    width 100%
+    position absolute
+    transition opacity .3s linear
+
+.datas::before
+  background: rgba(0,0,0,.3);
+  content: '';
+  top: 0;
+  height: 100%;
+
+.datas::after
+  background: #0d47a1;
+  content: '';
+  bottom: 0;
+  height: 5px;  
+
+
+.movie:hover .datas::after,
+.movie:hover .datas::before,
+.movie:hover .like,
+.movie:hover .play
+    opacity 1
+    transform scale(1)
+
+.movie:hover .category,
+.like i,
+.movie-view-like i
+    color #0277bd
+
+.ps
+    &:hover
+        & > .ps__scrollbar-y-rail
+            &:hover
+                background-color transparent
+                opacity 1
+    & > .ps__scrollbar-y-rail
+        width 10px
+
+.ps > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y, .ps > .ps__scrollbar-y-rail:active > .ps__scrollbar-y
+    width 6px
+
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y,
+    .ps > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y, .ps > .ps__scrollbar-y-rail:active > .ps__scrollbar-y,
+ .ps:hover.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail > .ps__scrollbar-x,
+    .ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y,
+    .ps > .ps__scrollbar-x-rail:hover > .ps__scrollbar-x, .ps > .ps__scrollbar-x-rail:active > .ps__scrollbar-x,
+    .ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y,
+    .ps.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail > .ps__scrollbar-x
+    width 6px
+
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail,
+  .ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail
+    opacity 0.1
+
+button,
+button:active,
+button:focus
+    background none
+    border none
+
+h4
+    spam
+        color white
+
+@media screen and (max-width: 480px)
+    .movie-view-title
+        h1
+            font-size 2.5em
+    .popularity
+        display block
+    input[type=text]:not(.browser-default)
+        font-size 1rem
+    .video-responsive
+        iframe
+            max-width 100%
+            width 100%
+            height 100%
