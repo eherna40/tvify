@@ -1,5 +1,7 @@
 # TViFy
 
+Ejemplo en funcionamiento gracias a gh-pages [TViFy](https://eherna40.github.io/tvify/)
+
 Web app de prueba para práctica y utilización de distintas librerías de javascript. TViFy te permite mostrar información de distintas películas, tanto en cartelera como antiguas, esto último gracias a su buscador.
 
 TViFy extrae datos en tiempo real desde la api de [themoviedb](https://www.themoviedb.org)
@@ -15,6 +17,7 @@ Debido a que es un proyecto de práctica, damos explicación de las librerías y
 - Perfect-scrollbar, para mejorar aspecto del scroll
 
 El codigo compilado lo podras conseguir en la carpeta public
+
 
 ## Ejemplo Codepen.io
 
